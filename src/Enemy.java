@@ -51,7 +51,6 @@ public class Enemy extends JPanel implements ActionListener
 			xVelo=(int) (Math.random()*(4+4)-4);
 			yVelo=(int) (Math.random()*(3+3)-3);
 		}
-		
 			if(x>=panel_width-50)
 				xVelo=(int) (Math.random()*(0-7));
 			if(x<0)
@@ -62,7 +61,7 @@ public class Enemy extends JPanel implements ActionListener
 				yVelo=(int) (Math.random()*(5-0)+0);
 			x=x+xVelo;
 			y=y+yVelo;
-			repaint();/* Calls paint method again */
+			repaint();// Calls paint method again
 		
 		
 	}
@@ -82,5 +81,4 @@ public class Enemy extends JPanel implements ActionListener
 	{
 		return new Rectangle(x,y,50,50);
 	}
-
 }

@@ -120,7 +120,7 @@ public class myFrame implements ActionListener
 					break;
 				case 68:
 					if(x<=500-86)
-					x=x+8;
+						x=x+8;
 					repaint();
 					break;
 				case 32:
@@ -138,11 +138,7 @@ public class myFrame implements ActionListener
 		
 		public class Beam extends JPanel implements ActionListener
 		{
-			
-			
-			
-			
-			public Beam() 
+			public Beam()
 			{
 				y1=500;
 				x1=x+35;
@@ -158,9 +154,7 @@ public class myFrame implements ActionListener
 			public void paint(Graphics g)
 			{
 				Graphics2D G=(Graphics2D) g;
-				
 				super.paint(G);
-				
 				G.setPaint(Color.yellow);
 				G.setStroke(new BasicStroke(5));
 				G.drawLine(x1, y1, x1, y1+30);
@@ -169,18 +163,12 @@ public class myFrame implements ActionListener
 			@Override
 			public void actionPerformed(ActionEvent e) 
 			{
-				
 				y1=y1-15;
 				delay++;
-				if(ammo==0)
-				{
-					Score.setText("GAME OVER");
-					
-				}
 				collision();
 				repaint();
-				
-				
+				if(ammo==0)
+					Score.setText("GAME OVER");
 			}
 			public void collision()
 			{
@@ -202,15 +190,11 @@ public class myFrame implements ActionListener
 		}
 
 		@Override
-		public void keyReleased(KeyEvent e) {
-			// TODO Auto-generated method stub
-			
+		public void keyReleased(KeyEvent e){
 		}
 
 		@Override
 		public void keyTyped(KeyEvent e) {
-			// TODO Auto-generated method stub
-			
 		}
 
 	}
