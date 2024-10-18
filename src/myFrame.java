@@ -15,6 +15,7 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.Timer;
+import javax.swing.border.LineBorder;
 
 @SuppressWarnings("serial")
 public class myFrame implements ActionListener
@@ -44,7 +45,7 @@ public class myFrame implements ActionListener
 		frame.setSize(500, 600);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.setLocationRelativeTo(null);
-		frame.getContentPane().setBackground(Color.LIGHT_GRAY);
+		frame.getContentPane().setBackground(Color.BLACK);
 		
 		Background=new ImageIcon("src/Resources/spaceship.png").getImage();
 		
@@ -56,11 +57,13 @@ public class myFrame implements ActionListener
 		Score=new JLabel("Score: 0");
 		Score.setBounds(0, 0, 200, 100);
 		Score.setFont(new Font("",Font.PLAIN,30));
+		Score.setForeground(Color.WHITE);
 		
 		reset=new JButton("RESET");
 		reset.setBounds(195,40,80,30);
 		reset.setForeground(Color.red);
 		reset.setBackground(Color.blue);
+		reset.setBorder(new LineBorder(Color.BLACK));
 		reset.setOpaque(false);
 		reset.setFocusable(false);
 		reset.addActionListener(this);
@@ -68,6 +71,7 @@ public class myFrame implements ActionListener
 		Ammo=new JLabel("Ammo: 3");
 		Ammo.setBounds(350, 0, 200, 100);
 		Ammo.setFont(new Font("",Font.PLAIN,30));
+		Ammo.setForeground(Color.WHITE);
 		
 		obj=new Enemy();
 		panel=obj;
