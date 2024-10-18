@@ -46,7 +46,7 @@ public class myFrame implements ActionListener
 		frame.setLocationRelativeTo(null);
 		frame.getContentPane().setBackground(Color.LIGHT_GRAY);
 		
-		Background=new ImageIcon("spaceship.png").getImage();
+		Background=new ImageIcon("src/Resources/spaceship.png").getImage();
 		
 		Scores=new JPanel();
 		Scores.setBounds(0, 0, 500, 70);
@@ -90,7 +90,7 @@ public class myFrame implements ActionListener
 			frame.addKeyListener(this);
 			this.setBounds(0, 500, 500, 100);
 			this.setOpaque(false);
-			ship=new ImageIcon("spaceship.png").getImage();
+			ship=new ImageIcon("src/Resources/spaceship.png").getImage();
 			
 		}
 		

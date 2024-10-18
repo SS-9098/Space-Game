@@ -27,7 +27,7 @@ public class Enemy extends JPanel implements ActionListener
 		direction=new Timer(1000,this);
 		
 		this.setBounds(0,100,panel_width,panel_height);
-		enemy=new ImageIcon("enemy.png").getImage();
+		enemy=new ImageIcon("src/Resources/enemy.png").getImage();
 		this.setOpaque(false);
 		
 		timer.start();
@@ -68,12 +68,12 @@ public class Enemy extends JPanel implements ActionListener
 	
 	public void reset()
 	{
-		enemy=new ImageIcon("blast.png").getImage();
+		enemy=new ImageIcon("src/Resources/blast.png").getImage();
 		repaint();
 		
 		x=0;
 		y=0;
-		enemy=new ImageIcon("enemy.png").getImage();
+		enemy=new ImageIcon("src/Resources/enemy.png").getImage();
 		
 	}
 	
