@@ -1,9 +1,12 @@
 # How to Play
-**Clone this repository to your IDE and run** ```Main.java``` **in the ```Src``` Folder**
+1. Clone this repository to your IDE
+2. Run ```Main.java``` in the ```Src``` Folder
 
 _OR_
 
-**Download latest version, extarct files to a folder and run** ```Space_Game.JAR```
+1. Download latest version
+2. Extarct files to a folder
+3. Run ```Space_Game.JAR```
 
 ## Instructions
 - a and d to move
