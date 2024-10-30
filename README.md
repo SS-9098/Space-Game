@@ -9,9 +9,9 @@ _OR_
 3. Run ```Space_Game.JAR```
 
 ## Instructions
-- a and d to move
-- space to shoot
-- ammo resets on kill
+- Press ```a``` or ```d``` to move
+-  ```space``` to shoot
+- Ammo resets on kill
 
 ---
 >[!IMPORTANT]
